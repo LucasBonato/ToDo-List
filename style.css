@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+:root {
+    --main-border-radius: 6px;
+    --font-size-main: 15px;
+    --font-size-footer: 10px;
+    --width-main: 90vw;
+}
+
 * {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
@@ -42,9 +49,9 @@ div.todo-inpu {
     display: block;
     margin: 0 auto;
     background-color: #fff;
-    width: 90vw;
+    width: var(--width-main);
     height: 50px;
-    border-radius: 6px;
+    border-radius: var(--main-border-radius);
 }
 
 div.container {
@@ -71,7 +78,7 @@ input {
     margin: 7.5px;
     outline: none;
     border: none;
-    font-size: 15px;
+    font-size: var(--font-size-main);
     margin-top: 12px;
 }
 
@@ -93,9 +100,9 @@ div.todo-element {
     align-items: center;
     justify-content: space-around;
     background-color: #fff;
-    width: 90vw;
+    width: var(--width-main);
     height: 45px;
-    border-radius: 6px;
+    border-radius: var(--main-border-radius);
     margin-top: 5px;
 }
 
@@ -110,13 +117,14 @@ div.circle-element {
 }
 
 p {
-    font-size: 15px;
+    font-size: var(--font-size-main);
+    width: 70vw;
 }
 
 div.buttons-todo {
     display: block;
     margin: auto 0;
-    width: 90vw;
+    width: var(--width-main);
     text-align: center;
 }
 
@@ -125,15 +133,15 @@ div.flex {
     align-items: center;
     justify-content: space-evenly;
     background-color: #fff;
-    border-radius: 6px;
+    border-radius: var(--main-border-radius);
     height: 50px;
 }
 
 div.attribution {
-    font-size: 10px;
-    width: 90vw;
+    font-size: var(--font-size-footer);
+    width: var(--width-main);
 }
 
 div.attribution a {
-    font-size: 10px;
+    font-size: var(--font-size-footer);
 }
