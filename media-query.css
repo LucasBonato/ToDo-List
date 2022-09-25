@@ -21,6 +21,7 @@
         background-color: rgb(236, 236, 236);
         background-image: url(images/bg-desktop-light.jpg);
         background-repeat: no-repeat;
+        background-size: 100vw;
     }
 
     div.top {
@@ -63,7 +64,7 @@
         border-radius: 50%;
     }
     
-    input {
+    input#text {
         width: 35vw;
         margin: 0;
         padding-left: 25px;
@@ -87,6 +88,10 @@
         height: 70px;
         padding-left: 33px;
         padding-right: 33px;
+    }
+
+    input#confirm {
+        width: min-content;
     }
     
     div.circle-element {
